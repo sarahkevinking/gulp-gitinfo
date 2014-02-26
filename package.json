@@ -1,0 +1,38 @@
+{
+  "name": "gulp-gitinfo",
+  "description": "Git plugin for Gulp (gulpjs.com)",
+  "version": "0.0.1",
+  "homepage": "https://github.com/optimus-king/gulp-gitinfo"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/optimus-king/gulp-gitinfo.git"
+  },
+  "author": "Kevin King kingpkevin@gmail.com",
+  "main": "./index.js",
+  "dependencies": {
+    "gulp-util": "~2.2.14",
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "engines": {
+    "node": ">= 0.9.0"
+  },
+  "keywords": [
+    "gulp",
+    "git",
+    "info",
+    "gulpgit",
+    "gulpplugin",
+    "gulp-plugin"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/optimus-king/gulp-gitinfo"
+    }
+  ]
+}

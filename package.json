@@ -2,7 +2,7 @@
   "name": "gulp-gitinfo",
   "description": "Git plugin for Gulp (gulpjs.com)",
   "version": "0.0.1",
-  "homepage": "https://github.com/optimus-king/gulp-gitinfo"
+  "homepage": "https://github.com/optimus-king/gulp-gitinfo",
   "repository": {
     "type": "git",
     "url": "https://github.com/optimus-king/gulp-gitinfo.git"
@@ -11,9 +11,12 @@
   "main": "./index.js",
   "dependencies": {
     "gulp-util": "~2.2.14",
+    "any-shell-escape": "0.1.0"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "should": "*",
+    "event-stream": "~3.1.0"
   },
   "scripts": {
     "test": "mocha --reporter spec"

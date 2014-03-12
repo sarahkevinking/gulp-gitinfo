@@ -1,7 +1,7 @@
 {
   "name": "gulp-gitinfo",
   "description": "Plug to fetch git information about local repository",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "https://github.com/optimus-king/gulp-gitinfo",
   "repository": {
     "type": "git",

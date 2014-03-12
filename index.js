@@ -20,20 +20,23 @@ module.exports = function (cb) {
   var child_count = 0
   Object.keys(commands).forEach(function(cmd) {
       var command = commands[cmd]
-      var git_cmd = "echo '"+cmd+"' && git " + command.join(" ")
+      var git_cmd = "echo '"+cmd+",' && git " + command.join(" ") 
       var child = exec(git_cmd, function(err, stdout, stderr) {
       })
-      streams.push(child.stdout)
+    
+      streams.push(child.stdout.pipe(es.wait()))
   })
   var stream = es.merge.apply(es, streams)
   var info = {}
   stream.on('data', function(data) {
-      var data = data.split("\n")
+      var data = data.split(",")
+      data[0] = data[0].substring(0, data[0].length-1)
       info[data[0]] = data[1]
   })
   return stream
       .pipe(es.map(function(data, cb) {
           data= data.split("\n")
+          data[0] = data[0].substring(0, data[0].length-1)
           data[0] = '"'+data[0] + '"'
           data[1] = '"'+data[1] + '"'
           if(data.length < 3) {

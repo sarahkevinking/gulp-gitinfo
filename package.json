@@ -10,8 +10,7 @@
   "author": "Kevin King kingpkevin@gmail.com",
   "main": "./index.js",
   "dependencies": {
-    "gulp-util": "~2.2.14",
-    "any-shell-escape": "0.1.0"
+    "gulp-util": "~2.2.14"
   },
   "devDependencies": {
     "mocha": "*",
@@ -32,10 +31,8 @@
     "gulpplugin",
     "gulp-plugin"
   ],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/optimus-king/gulp-gitinfo"
-    }
-  ]
+  "licenses": [{
+    "type": "MIT",
+    "url": "https://github.com/optimus-king/gulp-gitinfo"
+  }]
 }

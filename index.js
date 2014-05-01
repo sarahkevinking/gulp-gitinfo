@@ -1,7 +1,6 @@
-var gutil = require('gulp-util');
-var exec = require('child_process').exec;
-var es = require('event-stream');
-var os = require('os');
+var exec = require('child_process').exec,
+  es = require('event-stream'),
+  os = require('os');
 
 module.exports = function(cb) {
   var commands = {
@@ -20,7 +19,7 @@ module.exports = function(cb) {
     var git_cmd = "echo " + cmd + " && git " + command.join(" ");
     var child = exec(git_cmd, function(err, stdout, stderr) {});
     streams.push(child.stdout.pipe(es.wait()));
-  })
+  });
   var stream = es.merge.apply(es, streams);
   return stream
     .pipe(es.map(function(data, cb) {

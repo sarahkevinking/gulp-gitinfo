@@ -9,9 +9,7 @@
   },
   "author": "Kevin King kingpkevin@gmail.com",
   "main": "./index.js",
-  "dependencies": {
-    "gulp-util": "~2.2.14"
-  },
+  "dependencies": {},
   "devDependencies": {
     "mocha": "*",
     "should": "*",

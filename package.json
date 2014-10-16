@@ -25,12 +25,8 @@
     "node": ">= 0.9.0"
   },
   "keywords": [
-    "gulp",
     "git",
-    "info",
-    "gulpgit",
-    "gulpplugin",
-    "gulp-plugin"
+    "info"
   ],
   "licenses": [{
     "type": "MIT",

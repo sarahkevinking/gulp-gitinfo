@@ -12,7 +12,9 @@
     {"name": "Jorge Barnaby", "url": "https://github.com/yorch"}
   ],
   "main": "./index.js",
-  "dependencies": {},
+  "dependencies": {
+    "event-stream": "~3.1.0"
+  },
   "devDependencies": {
     "mocha": "*",
     "should": "*",

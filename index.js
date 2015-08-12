@@ -35,7 +35,8 @@ module.exports = function(cb) {
       var lines = data.split(',');
       lines.forEach(function(line) {
         var section = line.split(':');
-        obj[section[0]] = section[1];
+        var key = section.shift();
+        obj[key] = section.join(":");
       });
       cb(null, JSON.stringify(obj));
     }))

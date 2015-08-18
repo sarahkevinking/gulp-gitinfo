@@ -9,6 +9,7 @@ module.exports = function(cb) {
     'local.branch.current.shortSHA': ['rev-parse', '--short', 'HEAD'],
     'local.branch.current.currentUser': ['config', '--global', 'user.name'],
     'local.branch.current.lastCommitTime': ['log', '--format="%ai"', '-n1', 'HEAD'],
+    'local.branch.current.lastCommitMessage' : ['log', '--format="%B"', '-n1', 'HEAD'],
     'local.branch.current.lastCommitAuthor': ['log', '--format="%aN"', '-n1', 'HEAD'],
     'local.branch.current.tag': ['describe', '--abbrev=0', '--exact-match'],
     'remote.origin.url': ['config', '--get-all', 'remote.origin.url']

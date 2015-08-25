@@ -1,7 +1,7 @@
 {
   "name": "gulp-gitinfo",
   "description": "Plug to fetch git information about local repository",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "homepage": "https://github.com/optimus-king/gulp-gitinfo",
   "repository": {
     "type": "git",
@@ -9,7 +9,10 @@
   },
   "author": "Kevin King kingpkevin@gmail.com",
   "contributors": [
-    {"name": "Jorge Barnaby", "url": "https://github.com/yorch"}
+    {
+      "name": "Jorge Barnaby",
+      "url": "https://github.com/yorch"
+    }
   ],
   "main": "./index.js",
   "dependencies": {
@@ -30,8 +33,10 @@
     "git",
     "info"
   ],
-  "licenses": [{
-    "type": "MIT",
-    "url": "https://github.com/optimus-king/gulp-gitinfo"
-  }]
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/optimus-king/gulp-gitinfo"
+    }
+  ]
 }
